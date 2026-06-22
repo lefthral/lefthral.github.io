@@ -2,6 +2,8 @@
 
 Static portfolio site prepared for GitHub Pages.
 
+The public resume PDF is stored at `assets/Aryan-Shinde-Resume.pdf`.
+
 ## Local preview
 
 Open `index.html` directly in a browser, or run a temporary local server:
