@@ -235,6 +235,115 @@
               </div>
             </div>
           </article>
+
+          <article class="project-card">
+            <div class="project-visual inference-visual" aria-hidden="true">
+              <span class="big-score">97.0%</span>
+              <span class="sub-label">F1 0.9767</span>
+            </div>
+            <div class="project-content">
+              <p class="project-type">GCP / Vertex AI / KFP / Logistic Regression</p>
+              <h3>Enterprise Vertex AI Custom ML Ingestion &amp; Cloud Inference Automation</h3>
+              <p>
+                Built a fully parameterized Vertex AI pipeline using Kubeflow DSL components for end-to-end
+                breast cancer screening data ingestion, StandardScaler transformation, and classification.
+              </p>
+              <ul class="impact-list">
+                <li>Achieved 97.0% validation accuracy and F1 of 0.9767 with zero training-serving skew.</li>
+                <li>Deployed a cloud inference runtime that reads model artifacts from GCS and mirrors upstream scaler states.</li>
+                <li>Used LLM-assisted workflows to compile JSON KFP schemas and automate GCS artifact uploads.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-visual automl-visual" aria-hidden="true">
+              <span class="bq-label">BigQuery</span>
+              <span class="bq-label">Vertex AI</span>
+              <span class="shap-bar" style="--w: 78%;">Glucose +0.33</span>
+              <span class="shap-bar" style="--w: 48%;">BMI +0.19</span>
+              <span class="shap-bar neg" style="--w: 54%;">Insulin −0.23</span>
+            </div>
+            <div class="project-content">
+              <p class="project-type">GCP / BigQuery / AutoML / Vertex AI Explanations</p>
+              <h3>Vertex AI AutoML Enterprise Tabular Engine &amp; Explanations Architecture</h3>
+              <p>
+                Built an AutoML tabular model on BigQuery-linked Vertex AI Managed Dataset for diabetes
+                prediction with SHAP-based local feature importance explainability.
+              </p>
+              <ul class="impact-list">
+                <li>Orchestrated batch inference on an n1-standard-4 endpoint, writing predictions back to BigQuery within 24 minutes.</li>
+                <li>Extracted SHAP summary weights revealing Glucose (+0.33) as top positive driver and Insulin (−0.23) as top negative force.</li>
+                <li>Used AI pair-programming to generate BigQuery SQL, SDK blocks, and zero-downtime endpoint transitions.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-visual retail-visual" aria-hidden="true">
+              <span class="kpi-card">$25.6k</span>
+              <span class="kpi-card">$8.68</span>
+              <span class="chart-line"></span>
+            </div>
+            <div class="project-content">
+              <p class="project-type">Tableau / SQL / Retail Analytics</p>
+              <h3>Omni-Channel Retail Analytics Intelligence Dashboard &amp; Multi-Dimensional Platform</h3>
+              <p>
+                Designed a multi-page Tableau BI platform tracking 2,400 multi-year store observations across
+                4 regions to isolate revenue drivers, marketing ROI, and promotional lift.
+              </p>
+              <ul class="impact-list">
+                <li>Exposed a marketing efficiency differential of $8.68/spend in top zones vs. $8.25 in laggard regions.</li>
+                <li>Revealed holiday promotions double baseline lift values ($24.67k → $28.39k) through seasonal toggles.</li>
+                <li>Integrated AI copilots to draft complex calculated fields, parameter filters, and multi-page UI/UX logic.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-visual dbt-visual" aria-hidden="true">
+              <span class="dbt-node">stg</span>
+              <span class="dbt-node">dim</span>
+              <span class="dbt-node">fct</span>
+              <span class="dbt-arrow" aria-hidden="true">→</span>
+            </div>
+            <div class="project-content">
+              <p class="project-type">dbt / Snowflake / Analytics Engineering</p>
+              <h3>Programmable dbt Analytics Engineering &amp; Periodic Snapshot Pipeline</h3>
+              <p>
+                Built a modular dbt Cloud pipeline on Snowflake that materializes conformed dimensions and
+                a periodic snapshot fact table for tracking project delivery health across 22 engagements.
+              </p>
+              <ul class="impact-list">
+                <li>Orchestrated a snapshot at one row per deliverable per month for historical time-series analytics.</li>
+                <li>Achieved 100% data compliance across 7 key financial and operational metrics with zero variance.</li>
+                <li>Used AI prompt-engineering to draft SQL models, Jinja configuration blocks, and schema test suites.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-visual etl-visual" aria-hidden="true">
+              <div class="etl-node">JSON</div>
+              <div class="etl-node">CSV</div>
+              <div class="etl-node py">Python</div>
+              <div class="etl-node arrow">→</div>
+              <div class="etl-node db">Snowflake</div>
+            </div>
+            <div class="project-content">
+              <p class="project-type">Python / Pandas / Snowflake / SQL</p>
+              <h3>Programmatic Big Data ETL Pipelines &amp; Automated Semi-Structured Ingestion</h3>
+              <p>
+                Engineered automated Python/Pandas ETL pipelines that unpack deeply nested JSON payloads
+                and multi-format CSV files into clean relational dataframes for Snowflake analytics.
+              </p>
+              <ul class="impact-list">
+                <li>Programmatically flattened nested JSON with json_normalize and enforced UTF-8 encodings to prevent truncation.</li>
+                <li>Constructed advanced Snowflake SQL with window functions and CTEs for running totals and streak analysis.</li>
+                <li>Leveraged AI copilots to generate regex cleaning functions, validation parameters, and runtime exception handling.</li>
+              </ul>
+            </div>
+          </article>
         </div>
       </section>
 
@@ -247,23 +356,31 @@
         <div class="skill-grid">
           <div>
             <h3>AI and automation</h3>
-            <p>ChatGPT, GitHub Copilot, Microsoft Copilot, Vertex AI, Power Automate, prompt engineering.</p>
+            <p>ChatGPT, GitHub Copilot, Microsoft Copilot, Vertex AI, AutoML, Kubeflow Pipelines, Power Automate, prompt engineering, LLM-assisted development.</p>
           </div>
           <div>
             <h3>Workflow and documentation</h3>
-            <p>Process automation, structured research workflows, source-to-target mapping, metadata strategy.</p>
+            <p>Process automation, structured research workflows, source-to-target mapping, metadata strategy, AI-assisted code generation.</p>
           </div>
           <div>
             <h3>Languages and scripting</h3>
-            <p>Python, Pandas, NumPy, scikit-learn, SQL, Git, Java.</p>
+            <p>Python, Pandas, NumPy, scikit-learn, XGBoost, LightGBM, SQL, Git, Java, regex, json_normalize.</p>
           </div>
           <div>
             <h3>Reporting and BI</h3>
-            <p>Tableau, Power BI, dbt, Snowflake, dashboard modeling, marketing and operations analytics.</p>
+            <p>Tableau, Power BI, dbt Cloud, Snowflake, dashboard modeling, marketing and operations analytics, Kimball dimensional modeling.</p>
           </div>
           <div>
             <h3>Data infrastructure</h3>
-            <p>GCP, AWS, DynamoDB, AWS Kinesis, Lambda, Terraform, Neo4j, GCS, cloud inference runtimes.</p>
+            <p>GCP (BigQuery, Vertex AI, GCS), AWS (Kinesis, Lambda, DynamoDB, RDS), Terraform, Docker, Neo4j, MLflow, feature stores.</p>
+          </div>
+          <div>
+            <h3>ML and statistical modeling</h3>
+            <p>Classification, regression, SMOTE, SHAP, feature importance, Z-score normalization, hypothesis testing, trend analysis.</p>
+          </div>
+          <div>
+            <h3>Data engineering</h3>
+            <p>ETL pipeline design, 3NF normalization, star schema, dbt snapshots, streaming ingestion, semi-structured data parsing.</p>
           </div>
           <div>
             <h3>Certifications</h3>

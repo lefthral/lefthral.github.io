@@ -576,6 +576,176 @@ h3 {
   font-weight: 950;
 }
 
+.inference-visual {
+  display: grid;
+  place-items: center;
+  align-content: center;
+  gap: 0.25rem;
+  padding: 1.4rem;
+  background: linear-gradient(135deg, rgba(107, 91, 191, 0.95), rgba(23, 56, 95, 0.92)), #151817;
+}
+
+.big-score {
+  color: var(--paper-strong);
+  font-size: clamp(2.6rem, 6vw, 4.2rem);
+  font-weight: 950;
+  line-height: 1;
+}
+
+.sub-label {
+  color: rgba(255, 253, 250, 0.7);
+  font-size: 0.85rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.automl-visual {
+  display: grid;
+  align-content: center;
+  gap: 0.6rem;
+  padding: 1.4rem;
+  background: linear-gradient(135deg, rgba(15, 107, 87, 0.92), rgba(23, 56, 95, 0.94)), #151817;
+}
+
+.bq-label {
+  display: grid;
+  place-items: center;
+  min-height: 32px;
+  border: 1px solid rgba(255, 253, 250, 0.35);
+  color: var(--paper-strong);
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+  font-size: 0.72rem;
+  font-weight: 800;
+  background: rgba(255, 253, 250, 0.08);
+}
+
+.bq-label:first-child {
+  background: rgba(255, 253, 250, 0.14);
+}
+
+.shap-bar {
+  min-height: 24px;
+  display: flex;
+  align-items: center;
+  padding-left: 0.5rem;
+  background: rgba(214, 154, 37, 0.82);
+  color: var(--ink);
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+  font-size: 0.68rem;
+  font-weight: 900;
+  width: calc(var(--w, 50%) * 1);
+}
+
+.shap-bar.neg {
+  background: rgba(187, 86, 59, 0.78);
+  color: var(--paper-strong);
+}
+
+.retail-visual {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.6rem;
+  align-content: center;
+  padding: 1.4rem;
+  background: linear-gradient(135deg, rgba(20, 21, 20, 0.94), rgba(23, 56, 95, 0.9)), #151817;
+}
+
+.kpi-card {
+  min-height: 72px;
+  display: grid;
+  place-items: center;
+  border: 1px solid rgba(255, 253, 250, 0.3);
+  color: var(--amber);
+  font-size: clamp(1.4rem, 3vw, 2.2rem);
+  font-weight: 950;
+  background: rgba(255, 253, 250, 0.06);
+}
+
+.chart-line {
+  grid-column: 1 / -1;
+  height: 60px;
+  background:
+    linear-gradient(90deg, transparent 0 8%, var(--green) 8% 10%, transparent 10% 22%, var(--amber) 22% 24%, transparent 24% 38%, var(--clay) 38% 40%, transparent 40% 52%, var(--green) 52% 54%, transparent 54% 66%, var(--amber) 66% 68%, transparent 68% 100%);
+  clip-path: polygon(0 70%, 9% 70%, 14% 30%, 21% 60%, 27% 20%, 34% 50%, 39% 10%, 46% 45%, 52% 25%, 59% 55%, 65% 15%, 72% 50%, 78% 35%, 85% 65%, 91% 45%, 100% 60%, 100% 75%, 91% 70%, 85% 75%, 78% 55%, 72% 65%, 65% 40%, 59% 65%, 52% 45%, 46% 60%, 39% 30%, 34% 60%, 27% 40%, 21% 70%, 14% 45%, 9% 75%, 0 75%);
+  opacity: 0.85;
+}
+
+.dbt-visual {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  gap: 0.5rem;
+  align-content: center;
+  align-items: center;
+  padding: 1.4rem;
+  background: linear-gradient(135deg, rgba(187, 86, 59, 0.88), rgba(214, 154, 37, 0.88)), #151817;
+}
+
+.dbt-node {
+  min-height: 46px;
+  display: grid;
+  place-items: center;
+  border: 1px solid rgba(255, 253, 250, 0.5);
+  color: var(--paper-strong);
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+  font-size: 0.82rem;
+  font-weight: 900;
+  background: rgba(255, 253, 250, 0.1);
+}
+
+.dbt-visual .dbt-node:nth-child(2) {
+  background: rgba(255, 253, 250, 0.18);
+}
+
+.dbt-arrow {
+  color: var(--paper-strong);
+  font-size: 1.4rem;
+  font-weight: 950;
+}
+
+.etl-visual {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  align-content: center;
+  justify-content: center;
+  padding: 1.4rem;
+  background: linear-gradient(135deg, rgba(23, 56, 95, 0.92), rgba(15, 107, 87, 0.9)), #151817;
+}
+
+.etl-node {
+  min-height: 44px;
+  min-width: 64px;
+  display: grid;
+  place-items: center;
+  padding: 0 0.6rem;
+  border: 1px solid rgba(255, 253, 250, 0.4);
+  color: var(--paper-strong);
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+  font-size: 0.72rem;
+  font-weight: 900;
+  background: rgba(255, 253, 250, 0.08);
+}
+
+.etl-node.py {
+  background: var(--amber);
+  color: var(--ink);
+  border-color: var(--amber);
+}
+
+.etl-node.db {
+  background: var(--green);
+  border-color: var(--green);
+}
+
+.etl-node.arrow {
+  border: none;
+  background: none;
+  font-size: 1.2rem;
+  min-width: auto;
+  padding: 0;
+}
+
 .project-content {
   padding: clamp(1.1rem, 3vw, 1.55rem);
 }
