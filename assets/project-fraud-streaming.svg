@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">Real-time fraud streaming platform preview</title>
+  <desc id="desc">Architecture view with streaming events, an identity graph, feature store, and scoring decision.</desc>
+  <defs>
+    <pattern id="grid" width="42" height="42" patternUnits="userSpaceOnUse">
+      <path d="M42 0H0v42" fill="none" stroke="#ffffff" stroke-opacity=".08" stroke-width="1"/>
+    </pattern>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#111817"/>
+      <stop offset=".55" stop-color="#17385f"/>
+      <stop offset="1" stop-color="#0f6b57"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#000000" flood-opacity=".28"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <rect width="1200" height="675" fill="url(#grid)"/>
+  <g filter="url(#shadow)">
+    <rect x="72" y="78" width="258" height="236" rx="18" fill="#fffdfa" fill-opacity=".95"/>
+    <text x="102" y="128" fill="#141514" font-family="Arial, sans-serif" font-size="28" font-weight="800">Event Stream</text>
+    <rect x="104" y="162" width="174" height="18" rx="9" fill="#0f6b57"/>
+    <rect x="104" y="204" width="208" height="18" rx="9" fill="#d69a25"/>
+    <rect x="104" y="246" width="142" height="18" rx="9" fill="#bb563b"/>
+  </g>
+  <g fill="none" stroke="#fffdfa" stroke-opacity=".7" stroke-width="5" stroke-linecap="round">
+    <path d="M330 198 C430 198 440 326 532 326"/>
+    <path d="M690 326 C786 326 790 180 878 180"/>
+    <path d="M690 326 C788 326 800 492 878 492"/>
+  </g>
+  <g filter="url(#shadow)">
+    <rect x="508" y="214" width="222" height="224" rx="22" fill="#141514" stroke="#fffdfa" stroke-opacity=".34" stroke-width="2"/>
+    <circle cx="584" cy="287" r="32" fill="#6b5bbf"/>
+    <circle cx="646" cy="310" r="28" fill="#0f6b57"/>
+    <circle cx="600" cy="370" r="24" fill="#d69a25"/>
+    <line x1="584" y1="287" x2="646" y2="310" stroke="#fffdfa" stroke-opacity=".75" stroke-width="5"/>
+    <line x1="646" y1="310" x2="600" y2="370" stroke="#fffdfa" stroke-opacity=".75" stroke-width="5"/>
+    <line x1="600" y1="370" x2="584" y2="287" stroke="#fffdfa" stroke-opacity=".75" stroke-width="5"/>
+    <text x="548" y="174" fill="#fffdfa" font-family="Arial, sans-serif" font-size="30" font-weight="800">Identity Graph</text>
+  </g>
+  <g filter="url(#shadow)">
+    <rect x="866" y="78" width="260" height="208" rx="18" fill="#fffdfa" fill-opacity=".95"/>
+    <text x="898" y="126" fill="#141514" font-family="Arial, sans-serif" font-size="27" font-weight="800">Feature Store</text>
+    <rect x="900" y="164" width="190" height="16" fill="#17385f" opacity=".86"/>
+    <rect x="900" y="202" width="140" height="16" fill="#0f6b57" opacity=".86"/>
+    <rect x="900" y="240" width="214" height="16" fill="#bb563b" opacity=".82"/>
+  </g>
+  <g filter="url(#shadow)">
+    <rect x="862" y="390" width="264" height="212" rx="18" fill="#141514" stroke="#fffdfa" stroke-opacity=".34" stroke-width="2"/>
+    <text x="894" y="444" fill="#fffdfa" font-family="Arial, sans-serif" font-size="28" font-weight="800">XGBoost + Rules</text>
+    <text x="894" y="504" fill="#d69a25" font-family="Arial, sans-serif" font-size="56" font-weight="900">35K/sec</text>
+    <text x="898" y="548" fill="#fffdfa" fill-opacity=".78" font-family="Arial, sans-serif" font-size="24" font-weight="700">p99 0.04ms</text>
+  </g>
+  <rect x="72" y="534" width="374" height="66" rx="18" fill="#d69a25"/>
+  <text x="104" y="577" fill="#141514" font-family="Arial, sans-serif" font-size="28" font-weight="900">Audit-ready decision record</text>
+</svg>

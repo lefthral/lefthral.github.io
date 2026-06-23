@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">Analytical data warehouse preview</title>
+  <desc id="desc">Kimball star schema with a fact table, dimensions, and SQL reporting workload.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#17385f"/>
+      <stop offset=".52" stop-color="#0f6b57"/>
+      <stop offset="1" stop-color="#141514"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="16" stdDeviation="16" flood-color="#000000" flood-opacity=".28"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <path d="M0 546C182 486 320 546 508 496c174-46 322-164 692-122v301H0Z" fill="#fffdfa" fill-opacity=".08"/>
+  <g fill="none" stroke="#fffdfa" stroke-opacity=".45" stroke-width="4">
+    <path d="M600 334 352 182"/>
+    <path d="M600 334 846 182"/>
+    <path d="M600 334 352 508"/>
+    <path d="M600 334 846 508"/>
+  </g>
+  <g filter="url(#shadow)" font-family="Arial, sans-serif" font-weight="800">
+    <rect x="442" y="238" width="316" height="196" rx="20" fill="#fffdfa"/>
+    <text x="496" y="304" fill="#141514" font-size="34">FACT_SALES</text>
+    <rect x="496" y="336" width="208" height="14" fill="#d69a25"/>
+    <rect x="496" y="370" width="156" height="14" fill="#0f6b57"/>
+    <rect x="496" y="404" width="188" height="14" fill="#bb563b"/>
+    <rect x="188" y="102" width="246" height="132" rx="18" fill="#fffdfa" fill-opacity=".94"/>
+    <text x="236" y="178" fill="#141514" font-size="28">DIM_DATE</text>
+    <rect x="766" y="102" width="246" height="132" rx="18" fill="#fffdfa" fill-opacity=".94"/>
+    <text x="800" y="178" fill="#141514" font-size="28">DIM_REGION</text>
+    <rect x="188" y="448" width="246" height="132" rx="18" fill="#fffdfa" fill-opacity=".94"/>
+    <text x="224" y="524" fill="#141514" font-size="28">DIM_PRODUCT</text>
+    <rect x="766" y="448" width="246" height="132" rx="18" fill="#fffdfa" fill-opacity=".94"/>
+    <text x="812" y="524" fill="#141514" font-size="28">DIM_STORE</text>
+  </g>
+  <g filter="url(#shadow)" font-family="Arial, sans-serif">
+    <rect x="72" y="284" width="252" height="96" rx="18" fill="#141514" stroke="#fffdfa" stroke-opacity=".34" stroke-width="2"/>
+    <text x="104" y="326" fill="#fffdfa" font-size="22" font-weight="800">Snowflake SQL</text>
+    <text x="104" y="356" fill="#d69a25" font-size="20" font-weight="700">window functions</text>
+    <rect x="876" y="294" width="252" height="76" rx="18" fill="#d69a25"/>
+    <text x="912" y="340" fill="#141514" font-size="24" font-weight="900">Reporting ready</text>
+  </g>
+</svg>

@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">dbt analytics engineering snapshot preview</title>
+  <desc id="desc">dbt lineage from staging to dimensions, fact table, and periodic monthly snapshot.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#bb563b"/>
+      <stop offset=".55" stop-color="#d69a25"/>
+      <stop offset="1" stop-color="#17385f"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="16" stdDeviation="16" flood-color="#000000" flood-opacity=".25"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <path d="M0 512C190 466 348 532 544 476c170-48 336-164 656-132v331H0Z" fill="#141514" fill-opacity=".16"/>
+  <g filter="url(#shadow)" font-family="Arial, sans-serif" font-weight="900">
+    <rect x="86" y="126" width="202" height="106" rx="18" fill="#fffdfa"/>
+    <text x="154" y="190" fill="#141514" font-size="32">stg</text>
+    <rect x="374" y="126" width="202" height="106" rx="18" fill="#fffdfa"/>
+    <text x="442" y="190" fill="#141514" font-size="32">dim</text>
+    <rect x="662" y="126" width="202" height="106" rx="18" fill="#fffdfa"/>
+    <text x="736" y="190" fill="#141514" font-size="32">fct</text>
+    <rect x="950" y="126" width="164" height="106" rx="18" fill="#141514" stroke="#fffdfa" stroke-opacity=".35" stroke-width="2"/>
+    <text x="984" y="190" fill="#fffdfa" font-size="30">snap</text>
+  </g>
+  <g fill="none" stroke="#fffdfa" stroke-width="7" stroke-linecap="round" stroke-opacity=".72">
+    <path d="M288 179H374"/>
+    <path d="M576 179H662"/>
+    <path d="M864 179H950"/>
+  </g>
+  <g filter="url(#shadow)" font-family="Arial, sans-serif">
+    <rect x="120" y="338" width="440" height="210" rx="22" fill="#141514" stroke="#fffdfa" stroke-opacity=".26" stroke-width="2"/>
+    <text x="164" y="402" fill="#fffdfa" font-size="30" font-weight="900">schema tests</text>
+    <rect x="166" y="438" width="324" height="18" rx="9" fill="#0f6b57"/>
+    <rect x="166" y="482" width="260" height="18" rx="9" fill="#d69a25"/>
+    <text x="166" y="530" fill="#fffdfa" fill-opacity=".75" font-size="22" font-weight="800">zero variance across 7 metrics</text>
+    <rect x="640" y="338" width="440" height="210" rx="22" fill="#fffdfa"/>
+    <text x="684" y="402" fill="#141514" font-size="30" font-weight="900">monthly snapshot</text>
+    <g fill="#d7cfc0">
+      <rect x="684" y="438" width="60" height="58" rx="8"/>
+      <rect x="764" y="420" width="60" height="76" rx="8"/>
+      <rect x="844" y="452" width="60" height="44" rx="8"/>
+      <rect x="924" y="396" width="60" height="100" rx="8"/>
+    </g>
+    <text x="684" y="532" fill="#5b625d" font-size="22" font-weight="800">22 engagements tracked</text>
+  </g>
+</svg>

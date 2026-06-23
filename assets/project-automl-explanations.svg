@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">AutoML tabular explanations preview</title>
+  <desc id="desc">BigQuery dataset connected to Vertex AI AutoML with SHAP local feature importance bars.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#0f6b57"/>
+      <stop offset=".5" stop-color="#17385f"/>
+      <stop offset="1" stop-color="#141514"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="16" stdDeviation="16" flood-color="#000000" flood-opacity=".27"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <g filter="url(#shadow)" font-family="Arial, sans-serif">
+    <rect x="82" y="100" width="320" height="456" rx="22" fill="#fffdfa"/>
+    <text x="124" y="160" fill="#141514" font-size="31" font-weight="900">BigQuery table</text>
+    <g fill="#d7cfc0">
+      <rect x="124" y="204" width="230" height="16"/>
+      <rect x="124" y="244" width="190" height="16"/>
+      <rect x="124" y="284" width="246" height="16"/>
+      <rect x="124" y="324" width="166" height="16"/>
+      <rect x="124" y="364" width="218" height="16"/>
+    </g>
+    <rect x="124" y="430" width="206" height="58" rx="14" fill="#17385f"/>
+    <text x="154" y="467" fill="#fffdfa" font-size="23" font-weight="900">batch predict</text>
+    <rect x="480" y="138" width="250" height="180" rx="22" fill="#141514" stroke="#fffdfa" stroke-opacity=".28" stroke-width="2"/>
+    <text x="526" y="202" fill="#fffdfa" font-size="30" font-weight="900">Vertex AI</text>
+    <text x="526" y="246" fill="#d69a25" font-size="24" font-weight="800">AutoML</text>
+    <rect x="808" y="100" width="310" height="456" rx="22" fill="#fffdfa"/>
+    <text x="852" y="160" fill="#141514" font-size="31" font-weight="900">SHAP drivers</text>
+    <rect x="852" y="212" width="194" height="34" rx="8" fill="#d69a25"/>
+    <text x="870" y="236" fill="#141514" font-size="20" font-weight="900">Glucose +0.33</text>
+    <rect x="852" y="274" width="138" height="34" rx="8" fill="#0f6b57"/>
+    <text x="870" y="298" fill="#fffdfa" font-size="20" font-weight="900">BMI +0.19</text>
+    <rect x="852" y="336" width="162" height="34" rx="8" fill="#bb563b"/>
+    <text x="870" y="360" fill="#fffdfa" font-size="20" font-weight="900">Insulin -0.23</text>
+    <text x="852" y="444" fill="#5b625d" font-size="23" font-weight="800">24 minute batch run</text>
+  </g>
+  <path d="M402 326C450 326 450 228 480 228M730 228C770 228 768 326 808 326" fill="none" stroke="#d69a25" stroke-width="8" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">Programmatic ETL pipeline preview</title>
+  <desc id="desc">Semi-structured JSON and CSV data flowing through Python and Pandas cleaning into Snowflake analytics.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#17385f"/>
+      <stop offset=".5" stop-color="#141514"/>
+      <stop offset="1" stop-color="#0f6b57"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#000000" flood-opacity=".28"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <g filter="url(#shadow)" font-family="Arial, sans-serif" font-weight="900">
+    <rect x="82" y="116" width="218" height="142" rx="20" fill="#fffdfa"/>
+    <text x="128" y="178" fill="#141514" font-size="32">JSON</text>
+    <text x="128" y="220" fill="#5b625d" font-size="22">nested payloads</text>
+    <rect x="82" y="338" width="218" height="142" rx="20" fill="#fffdfa"/>
+    <text x="128" y="400" fill="#141514" font-size="32">CSV</text>
+    <text x="128" y="442" fill="#5b625d" font-size="22">UTF-8 enforced</text>
+    <rect x="446" y="214" width="308" height="244" rx="24" fill="#141514" stroke="#fffdfa" stroke-opacity=".28" stroke-width="2"/>
+    <text x="498" y="286" fill="#d69a25" font-size="36">Python</text>
+    <text x="498" y="334" fill="#fffdfa" font-size="26">pandas + regex</text>
+    <rect x="498" y="376" width="182" height="18" rx="9" fill="#0f6b57"/>
+    <rect x="498" y="416" width="126" height="18" rx="9" fill="#bb563b"/>
+    <rect x="900" y="200" width="220" height="258" rx="22" fill="#fffdfa"/>
+    <path d="M954 286h112l-22 118H976Z" fill="#d7cfc0"/>
+    <path d="M958 286c12 24 94 24 106 0" fill="none" stroke="#17385f" stroke-width="8" stroke-linecap="round"/>
+    <text x="934" y="510" fill="#141514" font-size="32">Snowflake</text>
+  </g>
+  <g fill="none" stroke="#d69a25" stroke-width="8" stroke-linecap="round">
+    <path d="M300 187C360 187 376 298 446 298"/>
+    <path d="M300 410C360 410 376 362 446 362"/>
+    <path d="M754 336H900"/>
+  </g>
+  <rect x="82" y="546" width="404" height="60" rx="18" fill="#d69a25"/>
+  <text x="116" y="585" fill="#141514" font-family="Arial, sans-serif" font-size="26" font-weight="900">json_normalize to relational tables</text>
+</svg>
