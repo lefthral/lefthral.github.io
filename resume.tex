@@ -1,0 +1,122 @@
+\documentclass[10pt,letterpaper]{article}
+
+\usepackage[top=0.34in,bottom=0.34in,left=0.43in,right=0.43in]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[hidelinks]{hyperref}
+\usepackage{xcolor}
+\usepackage{tabularx}
+
+\definecolor{sectionblue}{rgb}{0.08,0.20,0.36}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\setlength{\tabcolsep}{0pt}
+\setlength{\emergencystretch}{2em}
+
+\newcommand{\ressection}[1]{%
+  \vspace{2.5pt}
+  {\color{sectionblue}\bfseries\MakeUppercase{#1}}\par
+  \vspace{1pt}
+  {\color{sectionblue}\hrule height 0.45pt}
+  \vspace{2pt}
+}
+
+\newenvironment{reslist}{%
+  \begin{list}{$\bullet$}{%
+    \setlength{\leftmargin}{1.05em}
+    \setlength{\itemsep}{0.45pt}
+    \setlength{\parsep}{0pt}
+    \setlength{\topsep}{1pt}
+    \setlength{\partopsep}{0pt}
+  }
+}{\end{list}}
+
+\newcommand{\role}[3]{%
+  \begin{tabularx}{\textwidth}{@{}Xr@{}}
+    \textbf{#1} & #2 \\
+  \end{tabularx}
+  #3\par
+}
+
+\newcommand{\project}[2]{%
+  \textbf{#1} \textbar{} #2\par
+}
+
+\begin{document}
+\fontsize{9.05pt}{9.8pt}\selectfont
+
+\begin{center}
+  {\fontsize{14.4pt}{15pt}\selectfont \color{sectionblue}\textbf{Aryan Anil Shinde}}\\[-1pt]
+  (213) 930-3154 \quad\textbar\quad
+  \href{mailto:aryanani@usc.edu}{aryanani@usc.edu} \quad\textbar\quad
+  \href{https://linkedin.com/in/aryananilshinde13}{LinkedIn} \quad\textbar\quad
+  \href{https://github.com/lefthral}{Github}
+\end{center}
+
+\vspace{-5pt}
+
+\ressection{Education}
+\begin{tabularx}{\textwidth}{@{}Xr@{}}
+  \textbf{University of Southern California} & 2025 -- 2027 \\
+  M.S. in Analytics, Los Angeles, CA & \\
+  \textbf{Vellore Institute of Technology} & 2021 -- 2025 \\
+  B.Tech in Computer Science \& Engineering & \\
+\end{tabularx}
+
+\ressection{Technical Skills}
+\begin{tabularx}{\textwidth}{@{}>{\bfseries}p{1.55in}X@{}}
+AI/Automation Tools & ChatGPT, GitHub Copilot, Microsoft Copilot, Vertex AI, Power Automate, Prompt Engineering \\
+Workflow/Docs & Process Automation, Structured Research Workflows, Source-to-Target Mapping, Metadata Strategy \\
+Languages/Scripting & Python (Pandas, NumPy, Scikit-learn), SQL, Git, Java, json\_normalize \\
+Reporting/BI Tools & Tableau, Excel, Power BI, dbt, Snowflake, BigQuery \\
+Data Infrastructure & GCP, GCS, Pub/Sub, Dataflow, Bigtable, AWS, Kafka, Flink, Confluent Schema Registry \\
+Certifications & AWS Cloud Practitioner, Tableau \& SQL (DataCamp), Cybersecurity Certification \\
+\end{tabularx}
+
+\ressection{Work Experience}
+\role{Integrated Learning Systems India Pvt. Ltd}{Jan 2025 -- Apr 2025}{Data Engineering Intern - ML \& Security Analytics}
+\begin{reslist}
+  \item Orchestrated a production-grade Vertex AI and Kubeflow Pipelines ingestion framework processing 620K network-traffic records across REST APIs, relational databases, and flat files, reaching 97.0\% validation accuracy, F1 of 0.9767, and zero training-serving skew.
+  \item Deployed a GCP inference runtime that replicated upstream StandardScaler states from GCS artifacts at serving time, eliminating numeric drift and cutting model prediction error 23\% across 8 months of phishing and malware logs.
+  \item Compressed ML pipeline delivery from 14 to 7 days with LLM-driven schema compilation that auto-generated JSON KFP component specs and automated GCS artifact versioning, saving about 40 hours per retraining cycle.
+\end{reslist}
+
+\role{ATCreations Design School}{Mar 2024 -- Aug 2024}{Data \& UX Analytics Intern}
+\begin{reslist}
+  \item Developed a 4-region Tableau BI platform ingesting 180,000+ inventory records across a 3-year window, surfacing a \$0.41 vs. \$0.62/spent marketing efficiency gap and \$275 to \$311 holiday promotional lift for 3 brand accounts.
+  \item Translated 23 stakeholder requirements into SQL-backed reporting frameworks, resolving 6 join mismatches and standardizing 14 calculated-field dependencies, lifting engagement 16\% and reducing dashboard refresh errors 34\%.
+  \item Delivered weekly Excel pivot-table summaries with VLOOKUPs and conditional formatting to non-technical leadership across 3 brand accounts, enabling KPI tracking without direct database access.
+\end{reslist}
+
+\role{SmartED Innovations}{Aug 2023 -- Nov 2023}{Junior Data Engineer Intern}
+\begin{reslist}
+  \item Reverse-engineered a brittle ETL codebase with Python/Pandas json\_normalize pipelines that processed 850K+ nested JSON payloads into UTF-8 relational dataframes, eliminating cybersecurity and network schema mismatches.
+  \item Authored 40+ Snowflake SQL analytical queries using window functions, CTEs, and multi-tier aggregation across 4M+ monthly monitoring events, reducing analyst query time from 4.2 hours to 18 minutes.
+  \item Validated 3 production pipelines through data quality audits, resolving 1,200+ schema discrepancies across 650K records, reducing downstream data errors 91\%, and ranking top 20 out of 100 trainees.
+\end{reslist}
+
+\ressection{Projects}
+\project{Real-Time Feature Store}{GCP, Pub/Sub, Dataflow, Bigtable}
+\begin{reslist}
+  \item Architected a dual-layer real-time/offline feature store processing 8M user interaction events per day through Pub/Sub and Dataflow, serving 6 ML models at 12ms p99 read latency via Bigtable and cutting feature staleness from 6 hours to 4 minutes.
+  \item Instrumented skew detection across 42 feature columns, flagging 94\% of incidents before production impact and restoring downstream model AUC by 0.031 after remediation.
+\end{reslist}
+
+\project{Data Cost Observability Platform}{BigQuery, dbt, INFORMATION\_SCHEMA}
+\begin{reslist}
+  \item Constructed a BigQuery cost observability platform processing 180GB of INFORMATION\_SCHEMA metadata monthly, attributing compute spend across 8 analyst teams and surfacing 340+ full-table scans in 30 days.
+  \item Engineered automated query optimization recommendations with dbt macros and slot telemetry, reducing average analyst query runtime from 4.8 minutes to 52 seconds across 1,200 weekly queries.
+\end{reslist}
+
+\project{Streaming Data Contract Enforcement}{Kafka, Confluent Schema Registry, Flink, Dataflow}
+\begin{reslist}
+  \item Designed a real-time data contract layer processing 400K Kafka events/hour, validating Avro payloads with Confluent Schema Registry and Flink within 11ms and routing invalid records to a lineage-rich DLQ.
+  \item Deployed a GCP Dataflow remediation pipeline that reprocessed 2.4M rejected events after schema fixes, recovering 9 days of training data and restoring fraud detection F1 from 0.81 to 0.94 without a full retrain.
+\end{reslist}
+
+\ressection{Leadership \& Involvement}
+\textbf{Head Coordinator} -- BGMI Showdown and MELTDOWN; led end-to-end event planning and execution.\\
+\textbf{Coordinator} -- TECH LITE and DESIGNATHON; supported national technical and design events.
+
+\end{document}
